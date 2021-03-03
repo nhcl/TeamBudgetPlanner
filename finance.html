@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Finance Team</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.2.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+    <a class="navbar-brand" href="index.html">Team Budget Planner</a>
+    <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#main-navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="main-navigation">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="manager.html">Program Managers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="finance.html">Finance Team</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <br>
+  <div class="container">
+      <div class="text-center" >
+          <table id="table" class="table-hover table-bordered">
+            <thead class="thead-dark">
+              <tr>
+                  <th>Deal Id</th>
+                  <th>Vendor Name</th>
+                  <th>Project Name</th>
+                  <th>Project Cost</th>
+                  <th>Budget Decided</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>0</td>
+                <td>Microsoft</td>
+                <td>Apollo Project</td>
+                <td>10000</td>
+                <td>Under Assesment</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Intel</td>
+                <td>Hermes Project</td>
+                <td>20000</td>
+                <td>Under Assesment</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Apple</td>
+                <td>Zeus Project</td>
+                <td>1500</td>
+                <td>Under Assesment</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+      <br>
+      <div class="text-center  form-group col">
+          <br>
+          Project Budget : <input type="text" name="pbudget" id="pbudget">
+          <br>
+          <br>
+          
+          <button onclick="editHtmlTbleSelectedRowFinance();">Edit</button>
+      </div>
+  </div> 
+  <script type="text/javascript" src="finance_table.js"></script>       
+</body>
+</body>
+</html>

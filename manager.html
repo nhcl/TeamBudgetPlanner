@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+      <title>Bootstrap 4 Example</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        
+    </head>
+
+    <body>
+      <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="index.html">Team Budget Planner</a>
+        <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#main-navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-navigation">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="manager.html">Program Managers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="finance.html">Finance Team</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      
+        <br>
+        <div class="container">
+            <div class="text-center" >
+                <table id="table" class="table-hover table-bordered">
+                  <thead class="thead-dark">
+                    <tr>
+                        <th>Deal Id</th>
+                        <th>Vendor Name</th>
+                        <th>Project Name</th>
+                        <th>Project Cost</th>
+                        <th>Budget Decided</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>0</td>
+                      <td>Microsoft</td>
+                      <td>Apollo Project</td>
+                      <td>10000</td>
+                      <td>Under Assesment</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>Intel</td>
+                      <td>Hermes Project</td>
+                      <td>20000</td>
+                      <td>Under Assesment</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>Apple</td>
+                      <td>Zeus Project</td>
+                      <td>1500</td>
+                      <td>Under Assesment</td>
+                    </tr>
+                  </tbody>
+                </table>
+            </div>
+            <br>
+            <div class="text-center  form-group col">
+                Deal ID  : <input type="text" name="dealId" id="dealId">
+                <br>
+                Vendor Name : <input type="text" name="vname" id="vname">
+                <br>
+                Project Name : <input type="text" name="pname" id="pname">
+                <br>
+                Project Cost : <input type="number" name="pcost" id="pcost">
+                <br>
+                <br>
+                
+                <button onclick="addHtmlTableRow();">Add</button>
+                <button onclick="editHtmlTbleSelectedRow();">Edit</button>
+                <button onclick="removeSelectedRow();">Remove</button>
+            </div>
+        </div> 
+        <script type="text/javascript" src="table_script.js"></script>       
+    </body>
+</html>
